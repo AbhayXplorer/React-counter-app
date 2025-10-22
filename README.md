@@ -14,10 +14,6 @@ A simple and stylish *React Counter App* built using React Hooks and CSS.
 - JavaScript  
 - CSS  
 
-## 🖼 Preview
-(Add a screenshot or gif of your app here)
-
----
 
 ### 🧠 Author
-Made with ❤ by *Abhay Gupta*c
+Made with ❤ by *Abhay Gupta*
