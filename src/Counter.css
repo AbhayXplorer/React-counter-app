@@ -1,0 +1,93 @@
+/* 👇 This ensures full page covers */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-page gradient */
+.counter-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e1e2f, #3a3a78, #5b3fc0);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+/* Glassmorphism Card */
+.counter-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s ease-in;
+}
+
+/* Title */
+.counter-card h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Rocket animation */
+.sticker {
+  font-size: 3rem;
+  margin: 10px 0;
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Count */
+.counter-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.green { background-color: #28a745; }
+.red { background-color: #dc3545; }
+.yellow { background-color: #ffc107; color: #000; }
+
+/* Message */
+.msg {
+  margin-top: 20px;
+  color: #00FF7F;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
